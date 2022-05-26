@@ -10,10 +10,9 @@
 
 .container {
   text-align: center;
-  width: 750px;
   margin-top: 30px;
+  width: 750px;
 }
-
 .center {
   display: flex;
   align-items: center;
@@ -193,9 +192,11 @@
   justify-content: space-evenly;
   width: 100%;
   align-items: center;
+  margin-bottom: 120px;
 }
-.container {
-  width: 85%;
+.row {
+  width: 80%;
+  margin-top: 30px;
 }
 .secTitle {
   font-size: 36px;
@@ -203,17 +204,23 @@
 }
 
 .cards {
+  margin-top: 30px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+}
+.cardone {
+  margin-left: 0 !important;
 }
 .card {
+  text-align: center;
   padding: 40px 65px;
   background: linear-gradient(180deg, #f7f8fa 0%, #edf1f5 100%);
   border-radius: 5px;
+  margin-left: 40px;
 }
 .card:hover {
-  background-color: #132739;
+  background: #132739;
 }
 .card:hover .cardPhoto {
   background-image: url(../image/flag1.png);
@@ -224,25 +231,124 @@
   height: 120px;
 }
 .cardHeader {
-    padding-top: 30px;
+  padding-top: 30px;
   font-size: 20px;
   letter-spacing: -0.5px;
   color: #152739;
-  /* color: #FFFFFF;====> hoverrrrrr */
 }
-.card p{
-    padding: 10px;
-    font-weight: 400;
-font-size: 14px;
-letter-spacing: -0.2px;
-color: #000000;
-/* color: #FFFFFF  ===> hover */
+.card:hover .cardHeader {
+  color: #ffffff;
 }
-.phoneNumber{
-    padding-top: 40px;
-    font-size: 15px;
-    color: #37BCA3;
-    /* color: #5CF0D5; ====> hover */
+
+.card p {
+  padding: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.2px;
+  color: #000000;
+}
+.card:hover p {
+  color: #ffffff;
+}
+.phoneNumber {
+  padding-top: 40px;
+  font-size: 15px;
+  color: #37bca3;
+}
+.card:hover .phoneNumber {
+  color: #5cf0d5;
 }
 
 /* Section4 end */
+
+/* Footer start */
+.f-container {
+}
+.f-row1 {
+  display: flex;
+  justify-content: space-evenly;
+  background: #132739;
+  height: 80px;
+  align-items: center;
+}
+.f-col {
+  display: flex;
+  align-items: center;
+}
+.f-row1 img {
+  height: 27px;
+  width: 40px;
+}
+.f-row1 p {
+  margin-left: 15px;
+  font-size: 13px;
+  letter-spacing: -0.2px;
+  color: #a3aab1;
+}
+
+.f-row2 {
+  background: #132739;
+  height: 250px;
+}
+.line {
+  width: 80%;
+  border: 1px solid #425261;
+}
+.f-info-items {
+  display: flex;
+  justify-content: space-evenly;
+}
+.info-item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.info-item p {
+  color: #ffffff;
+  font-size: 20px;
+}
+.info-item span {
+  color: #a3aab1;
+  margin-top: 20px;
+  font-size: 12px;
+}
+.subs {
+  display: flex;
+}
+.subs input {
+  padding: 10px 25px;
+  margin-top: 20px;
+  background: none;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border: 1px solid #425261;
+}
+.subs button {
+  padding: 10px 25px;
+  margin-top: 20px;
+  background: blue;
+  background: #3cc8ae;
+  box-shadow: 0px 22px 34px rgba(60, 200, 174, 0.5);
+  border-radius: 0px 6px 6px 0px;
+  border: none;
+}
+.contacts {
+  margin-top: 20px;
+}
+.contacts i {
+  font-size: 25px;
+  color: #596779;
+  margin: 0 10px;
+}
+.f-row3 {
+  background: #0f1b25;
+  height: 130px;
+  flex-direction: column;
+}
+.f-row3 p{
+  margin-top: 20px;
+  color: #6f767c;
+  font-size: 13px;
+}
+
+/* Footer end */
